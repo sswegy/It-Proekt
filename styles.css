@@ -1,21 +1,43 @@
-body {
-    background-color: #A4D4B4;
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-.main-navigator ul{
+body .main-navigator ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
 
-.main-navigator li {
+body .main-navigator li {
     float: left;
 }
 
-.main-navigator a {
+body .main-navigator a {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient(0deg, #3B1C32  0.3%, #A4D4B4  98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-container {
+    padding: 20px, 30px;
+    background-color: #FFCF9C;
+    border-radius: 15px;
+    box-shadow: 0, 20px, 20px, 0, rgba(59, 28, 50, 0.7);
+    display: flex;
+    
 }
