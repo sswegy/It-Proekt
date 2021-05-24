@@ -1,5 +1,7 @@
 body {
     background-color: #A4D4B4;
+    margin: 0;
+    padding: 0;
 }
 
 .main-navigator ul{
@@ -18,4 +20,18 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden
+}
+li.nav{
+    width: 33.3%;
+    height: 120px;
+    background-color: #CA054D;
+    color: #FFCF9C;
+    text-align: center;
+    font-size: 50px;
+}
+li.nav:hover{
+    background-color: #ac125a;
+}
+div.main-navigator{
+    background-color: #3B1C32;
 }
