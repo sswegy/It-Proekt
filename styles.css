@@ -2,18 +2,18 @@ body {
     background-color: #A4D4B4;
 }
 
-.navigator {
+.main-navigator ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
 
-.navigator li {
+.main-navigator li {
     float: left;
 }
 
-.navigator a {
+.main-navigator a {
     list-style-type: none;
     margin: 0;
     padding: 0;
