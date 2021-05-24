@@ -1,0 +1,21 @@
+body {
+    background-color: #A4D4B4;
+}
+
+.navigator {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+.navigator li {
+    float: left;
+}
+
+.navigator a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
