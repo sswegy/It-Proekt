@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 * {
     box-sizing: border-box;
+=======
+body {
+    background-color: #A4D4B4;
+    margin: 0;
+    padding: 0;
+>>>>>>> 989f4f3f2c28e7d71bbeaace89e987c19b070a85
 }
 
 body .main-navigator ul{
@@ -21,6 +28,7 @@ body .main-navigator a {
     padding: 0;
     overflow: hidden
 }
+<<<<<<< HEAD
 
 body {
     height: 100vh;
@@ -41,3 +49,19 @@ body {
     display: flex;
     
 }
+=======
+li.nav{
+    width: 33.3%;
+    height: 120px;
+    background-color: #CA054D;
+    color: #FFCF9C;
+    text-align: center;
+    font-size: 50px;
+}
+li.nav:hover{
+    background-color: #ac125a;
+}
+div.main-navigator{
+    background-color: #3B1C32;
+}
+>>>>>>> 989f4f3f2c28e7d71bbeaace89e987c19b070a85
