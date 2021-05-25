@@ -5,10 +5,10 @@
 }
 
 body {
-    height: 100vh;
+    height: 120vh;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(0deg, #3B1C32 0.5%, #A4D4B4 98%);
+    background-image: linear-gradient(0deg, #3B1C32 5%, #A4D4B4 98%);
     
 }
 
@@ -51,16 +51,71 @@ body .main-navigator a {
 li.nav{
     width: 33.3%;
     height: 100px;
-    background-color: #CA054D;
     color: #FFCF9C;
     text-align: center;
     font-size: 50px;
 }
 
 li.nav:hover{
-    background-color: #ac125a;
+   /* background-color: #ac125a;*/
+   background-color: #CA054D;
 }
 
 div.main-navigator{
     background-color: #3B1C32;
+}
+
+button.action-btn{
+    border-color: #B96D40;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: whitesmoke;
+}
+div.info{
+    color: #FFCF9C;
+    background-image: linear-gradient(0deg, #1f0718 30%, #3B1C32 98%);
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+button.nav{
+    background: #3B1C32;
+    color: #FFCF9C;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 48px;
+}
+button.nav:hover{
+    background-color: #CA054D;
+}
+div.madeBy{
+    background-color: #1f0718;
+    padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #FFCF9C;
+}
+ul.madeBY{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li.madeBY{
+    width: 33.3%;
+    height: 100px;
+}
+button.madeBY{
+    background-color:  #1f0718;
+    border: none;
+    color: #FFCF9C;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+button.madeBY:hover{
+    background-color: #CA054D;
 }
