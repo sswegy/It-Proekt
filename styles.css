@@ -30,6 +30,10 @@ body {
     width: 100px;
 }
 
+a {
+    text-decoration: none;
+}
+
 body .main-navigator ul{
     list-style-type: none;
     margin: 0;
@@ -50,7 +54,7 @@ body .main-navigator a {
 
 li.nav{
     width: 33.3%;
-    height: 100px;
+    height: 75px;
     background-color: #CA054D;
     color: #FFCF9C;
     text-align: center;
