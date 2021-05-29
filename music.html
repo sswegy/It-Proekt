@@ -38,7 +38,7 @@
             <button id="prev" class="action-btn">
                 <i class="fas fa-backward"></i>
             </button>
-            <button id="play" class="action-btn action-btn-big">
+            <button id="playButton" onclick="playAudio()" class="action-btn action-btn-big">
                 <i class="fas fa-play"></i>
             </button>
             <button id="next" class="action-btn">
@@ -47,7 +47,11 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="audio.js"></script>
+    <audio id="currentAudio">
+        <source src="Assets/Music/Rick Astley - Never gonna give you up.mp3" type="audio/mpeg" name="Rick Astley - Never gonna give you up">
+        Your browser does not support the audio element.
+    </audio>
 </body>
 
 </html>
