@@ -146,3 +146,33 @@ button.madeBY:hover{
     color: #FFCF9C;
     border-radius: 20px;
 }
+
+.main-video-container {
+    background-color: #FFCF9C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    margin: auto;
+    box-shadow: 0 20px 20px rgba(59, 28, 50, 0.3);
+    width: 1000px;
+    height: 500px;
+    padding: 10px;
+}
+
+video {
+    width: 750px;
+    left: 115px;
+    bottom: 90px;
+    position: relative;
+}
+
+.controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.7);
+}
