@@ -28,7 +28,10 @@
             </div>
         </div>
 
-        <audio src="Assets/Music/Static-X - The Only.mp3" id="audio"></audio>
+        <audio id="currentAudio">
+            <source src="Assets/Music/Static-X - The Only.mp3" type="audio/mpeg" name="Static-X - The Only">
+                Your browser does not support the audio element.
+        </audio>
 
         <div class="image-container">
             <img src="Assets/Pictures/theonly.jpg" alt="music-cover" id="cover" class="cover">
@@ -48,10 +51,7 @@
     </div>
 
     <script src="audio.js"></script>
-    <audio id="currentAudio">
-        <source src="Assets/Music/Rick Astley - Never gonna give you up.mp3" type="audio/mpeg" name="Rick Astley - Never gonna give you up">
-        Your browser does not support the audio element.
-    </audio>
+    
 </body>
 
 </html>
