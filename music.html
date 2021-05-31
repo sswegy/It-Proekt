@@ -28,30 +28,31 @@
             </div>
         </div>
 
-        <audio id="currentAudio">
-            <source src="Assets/Music/Static-X - The Only.mp3" type="audio/mpeg" name="Static-X - The Only">
-                Your browser does not support the audio element.
-        </audio>
-
-        <div class="image-container">
-            <img src="Assets/Pictures/theonly.jpg" alt="music-cover" id="cover" class="cover">
+        <div class="audio-container">
+            <audio id="currentAudio">
+                <source src="Assets/Music/Static-X - The Only.mp3" type="audio/mpeg">
+            </audio>
         </div>
 
+        <div class="image-container">
+            <img src="Assets/Pictures/The Only.jpg" alt="music-cover" id="cover" class="cover">
+        </div>
+        
         <div class="music-navigation">
-            <button id="prev" class="action-btn">
+            <button id="prev" onclick="playNext(0)" class="action-btn">
                 <i class="fas fa-backward"></i>
             </button>
             <button id="playButton" onclick="playAudio()" class="action-btn action-btn-big">
                 <i class="fas fa-play"></i>
             </button>
-            <button id="next" class="action-btn">
+            <button id="next" onclick="playNext(1)" class="action-btn">
                 <i class="fas fa-forward"></i>
             </button>
         </div>
     </div>
 
     <script src="audio.js"></script>
-    
+
 </body>
 
 </html>
