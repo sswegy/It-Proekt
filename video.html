@@ -4,6 +4,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudlflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,25 +16,14 @@
             <li class="nav"><a href="video.html"><button class="nav">Videos</button></a></li>
         </ul>
     </div>
-
-    <div class="main-video-container">
-        <div class="video-container">
-            <div class="video-info">
-                <h2 class="video-title">Road</h4>
-                    <h3 class="video-episode">Episode 1</h5>
+    <div class="mainContainer">
+        <div class="container">
+            <div class="videoDiv">
+                <video src="Assets/Videos/testvideo.mp4" class="video" controls></video>
             </div>
-
-            <video id="currentVideo">
-                <source src="Assets/Videos/testvideo.mp4" name="_____">
-                <div class="controls">
-                    <div class="progress-bar">
-
-                    </div>
-                    <div class="navigation-buttons">
-                        <button id="play-pause"></button>
-                    </div>
-                </div>
-            </video>
+        </div>
+        <div class="title">
+            <h1><strong>Road trip</strong></h1>
         </div>
     </div>
 </body>
