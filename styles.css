@@ -167,7 +167,7 @@ video {
     bottom: 90px;
     position: relative;
 }
-
+/*
 .controls {
     display: flex;
     position: absolute;
@@ -176,3 +176,4 @@ video {
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.7);
 }
+*/
