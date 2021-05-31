@@ -22,7 +22,7 @@ body {
     margin: auto;
     box-shadow: 0 20px 20px rgba(59, 28, 50, 0.3);
     width: 500px;
-    height: 400px;
+    height: 500px;
     padding: 10px;
 }
 
@@ -52,7 +52,7 @@ a {
     text-decoration: none;
 }
 
-body .main-navigator ul{
+body .main-navigator ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -70,7 +70,7 @@ body .main-navigator a {
     overflow: hidden
 }
 
-li.nav{
+li.nav {
     width: 33.3%;
     height: 75px;
     background-color: #CA054D;
@@ -79,16 +79,16 @@ li.nav{
     font-size: 50px;
 }
 
-li.nav:hover{
+li.nav:hover {
    /* background-color: #ac125a;*/
    background-color: #CA054D;
 }
 
-div.main-navigator{
+div.main-navigator {
     background-color: #3B1C32;
 }
 
-button.action-btn{
+button.action-btn {
     border-color: #B96D40;
     border-width: 5px;
     border-radius: 10px;
@@ -96,7 +96,8 @@ button.action-btn{
     height: 30px;
     background-color: whitesmoke;
 }
-div.info{
+
+div.info {
     color: #FFCF9C;
     box-shadow: 0 20px 20px rgba(59, 28, 50, 0.3);
     border-radius: 20px;
@@ -105,7 +106,8 @@ div.info{
     margin-left: 100px;
     margin-right: 100px;
 }
-button.nav{
+
+button.nav {
     background: #3B1C32;
     color: #FFCF9C;
     border: none;
@@ -113,10 +115,12 @@ button.nav{
     height: 100%;
     font-size: 48px;
 }
-button.nav:hover{
+
+button.nav:hover {
     background-color: #CA054D;
 }
-div.madeBy{
+
+div.madeBy {
     box-shadow: 0 20px 20px rgba(59, 28, 50, 0.3);
     background-color: #FFCF9C;
     border-radius: 20px;
@@ -125,17 +129,20 @@ div.madeBy{
     margin-right: 100px;
     color: #1f0718;
 }
-ul.madeBY{
+
+ul.madeBY {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-li.madeBY{
+
+li.madeBY {
     width: 33.3%;
     height: 100px;
 }
-button.madeBY{
+
+button.madeBY {
     background-color:  #FFCF9C;
     border: none;
     color: #1f0718;
@@ -143,14 +150,15 @@ button.madeBY{
     height: 100%;
     font-size: 30px;
 }
-button.madeBY:hover{
+
+button.madeBY:hover {
     background-color: #1f0718;
     color: #FFCF9C;
     border-radius: 20px;
 }
 
 .mainContainer {
-     background-color: #FFCF9C;
+    background-color: #FFCF9C;
    /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,6 +172,7 @@ button.madeBY:hover{
     box-shadow: 0 20px 20px rgba(59, 28, 50, 0.3);
     text-align: center;
 }
+
 .container{
     height: 50hv;
     display: flex;
@@ -171,11 +180,45 @@ button.madeBY:hover{
     justify-content: center;
     align-items: center;
 }
+
 video {
     box-shadow: 0 20px 20px rgba(59, 28, 50, 0.3);
     border-radius: 15px;
     width: 100%;
     position: relative;
+}
+
+.slider-container {
+    width: 302px; 
+}
+  
+.volume-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #3B1C32;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.volume-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #CA054D;
+    cursor: pointer;
+}
+  
+.volume-range::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+    background: #CA054D;
 }
 /*
 .controls {
