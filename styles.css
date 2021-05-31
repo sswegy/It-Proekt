@@ -28,15 +28,15 @@ body {
 
 .music-info {
     position: fixed;
-    float:left;
+    float: left;
     max-width: 120px;
-    top: 230px;
-    left: 460px;
+    top: 210px;
+    left: 740px;
 }
 
 .cover {
     position: fixed;
-    right: 450px;
+    right: 720px;
     bottom: 520px;
     float: right;
     height: 300px;
@@ -46,7 +46,7 @@ body {
 .music-navigation {
     position: fixed;
     top: 490px;
-    left: 440px;
+    left: 715px;
     margin-bottom: 100px;
     margin-left: 86.5px;
     margin-right: 86.5px;
