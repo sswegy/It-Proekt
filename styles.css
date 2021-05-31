@@ -27,22 +27,26 @@ body {
 }
 
 .music-info {
-    position: relative;
+    position: fixed;
     float:left;
-    top: 200px;
-    left: 20px;
+    max-width: 120px;
+    top: 230px;
+    left: 460px;
 }
 
 .cover {
-    position: relative;
-    right: 20px;
-    bottom: 30px;
+    position: fixed;
+    right: 450px;
+    bottom: 520px;
     float: right;
     height: 300px;
     width: 300px;
 }
 
 .music-navigation {
+    position: fixed;
+    top: 490px;
+    left: 440px;
     margin-bottom: 100px;
     margin-left: 86.5px;
     margin-right: 86.5px;
