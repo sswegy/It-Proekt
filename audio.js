@@ -1,5 +1,5 @@
 //the code at the current state is just initial spaghetti ready for refactoring, which i hope will be soon
-var listOfSongs = ["Static-X - The Only.mp3", "Rick Astley - Never Gonna Give You Up.mp3", "Bryan Scary & the Shredding Tears - Venus Ambassador.mp3"]
+var listOfSongs = ["Static-X - The Only.mp3", "Rick Astley - Never Gonna Give You Up.mp3"]
 function playAudio(){
     var audio = document.getElementById("currentAudio");
     var volumeMem = document.getElementById("currentAudio").getAttribute("psvolume");
