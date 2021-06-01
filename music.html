@@ -28,18 +28,21 @@
         </div>
 
         <div class="audio-container">
-            <audio id="currentAudio" onpause="setPauseButton()" onplay="setPlayButton()" onended="playNext(0)" >
+            <audio id="currentAudio" onpause="setPauseButton()" onplay="setPlayButton()" onended="playNext(1)" ontimeupdate="changeProgress()" psvolume="0.5">
                 <source src="Assets/Music/Static-X - The Only.mp3" type="audio/mpeg">
             </audio>
         </div>
 
         <div class="image-container">
-            <img src="Assets/Pictures/TheOnly.jpg" alt="music-cover" id="cover" class="cover" onerror="this.setAttribute('src', 'Assets/Pictures/default.jpg')">
+            <img src="Assets/Pictures/TheOnly.jpg" alt="music-cover" id="cover" class="cover" onerror="this.setAttribute('src', 'Assets/Pictures/default.jpg'); console.clear();">
         </div>
         
         <div class="music-navigation">
+            <div class="progress-bar">
+                <div id="audioBar"></div>
+            </div>
             <div class="slider-container">
-                <input type="range" min="1" max="100" value="50" class="volume-range" id="VolumeRange">
+                <input type="range" min="1" max="100" value="50" class="volume-range" id="VolumeRange" onchange="changeVolume()">
             </div>
             <button id="prev" onclick="playNext(0)" class="action-btn">
                 <i class="fas fa-backward"></i>

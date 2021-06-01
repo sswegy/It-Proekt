@@ -1,20 +1,22 @@
 //the code at the current state is just initial spaghetti ready for refactoring, which i hope will be soon
-var listOfSongs = ["Static-X - The Only.mp3", "Rick Astley - Never Gonna Give You Up.mp3"]
+var listOfSongs = ["Static-X - The Only.mp3", "Rick Astley - Never Gonna Give You Up.mp3", "Bryan Scary & the Shredding Tears - Venus Ambassador.mp3"]
 function playAudio(){
     var audio = document.getElementById("currentAudio");
+    var volumeMem = document.getElementById("currentAudio").getAttribute("psvolume");
+    audio.volume = parseFloat(volumeMem);
     if(audio.paused == true){
         audio.play();
     }else{
         audio = document.getElementById("currentAudio");
         audio.pause();
     } 
-    console.log(audio.volume);
 }
 
 function playNext(mode){
     var audio = document.getElementById("currentAudio");
     var newAudio;
     var coverName;
+    var cover = document.querySelector(".image-container");
     audio.pause();
     audio.currentTime = 0;
     if(mode == 1){
@@ -35,13 +37,28 @@ function playNext(mode){
     coverName = newAudio.slice((newAudio.search(" - ") + 3), newAudio.length-4);//editing cover name so that it could potencially be new img source for cover image
         coverName = removeSpaces(coverName); // / /g 
         coverName = "Assets/Pictures/" + coverName + ".jpg";
-    document.querySelector(".image-container").getElementsByTagName("img")[0].setAttribute("src", coverName);//setting new value for src, if it gives error it goes to default img, e.g. Assets/Pictures/default.jpg
-    audio = document.getElementById("currentAudio");//Updating audio source by removing and placing it again
-        newAudio = document.querySelector(".audio-container").innerHTML;
+    cover.getElementsByTagName("img")[0].setAttribute("src", coverName);//setting new value for src, if it gives error it goes to default img, e.g. Assets/Pictures/default.jpg
+    newAudio = document.querySelector(".audio-container").innerHTML;//Updating audio source by removing and placing it again
         audio.remove();
         newAudio = removeEnters(newAudio);
         document.querySelector(".audio-container").innerHTML = newAudio;
     playAudio();
+}
+
+function changeVolume(){
+    var audio = document.getElementById("currentAudio");
+    var volumeSlider = document.getElementById("VolumeRange");
+    var volume = parseFloat(volumeSlider.value);
+    audio.setAttribute("psvolume", volume/100);
+    audio.volume = volume/100;
+}
+
+function changeProgress(){
+    var bar = document.getElementById("audioBar");
+    var audio = document.getElementById("currentAudio");
+    var progress = audio.duration / 100;
+    progress = audio.currentTime / progress;
+    bar.style.width = progress + "%";
 }
 
 function findAudioPlace(song){
@@ -76,3 +93,4 @@ function removeSpaces(string){
     }
     return ret;
 }
+

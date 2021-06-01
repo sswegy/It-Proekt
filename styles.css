@@ -27,26 +27,46 @@ body {
 }
 
 .music-info {
-    position: fixed;
+    position: absolute;
     float: left;
     max-width: 120px;
-    top: 210px;
-    left: 740px;
+    height: 240px;
+    top: 20%;
+    left: 5%;
 }
 
 .cover {
-    position: fixed;
-    right: 720px;
-    bottom: 520px;
+    position: absolute;
+    right: 6.5%;
+    bottom: 25%;
     float: right;
     height: 300px;
     width: 300px;
+    border-radius: 10%;
+}
+
+.progress-bar {
+    position: relative;
+    width: 98.75%;
+    left: 2px;
+    height: 8px;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#audioBar {
+    position: relative;
+    width: 0%;
+    left: 0.1px;
+    height: 8px;
+    background-color: #66b881;
+    border-radius: 5px;
 }
 
 .music-navigation {
-    position: fixed;
-    top: 490px;
-    left: 715px;
+    position: absolute;
+    top: 82.5%;
+    left: 0%;
     margin-bottom: 100px;
     margin-left: 86.5px;
     margin-right: 86.5px;
