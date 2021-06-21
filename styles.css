@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+p {
+    font-size: 50px;
+    text-align: center;
+}
+
 body {
     height: 120vh;
     margin: 0;
